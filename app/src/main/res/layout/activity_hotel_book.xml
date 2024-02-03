@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".HotelBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hotelbackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewAppTitle"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:text="Hotel Booking"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="100dp"
+            tools:layout_marginBottom="14dp" />
+
+        <EditText
+            android:id="@+id/editTextbookfullname"
+            android:layout_width="249dp"
+            android:layout_height="45dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="158dp" />
+
+        <EditText
+            android:id="@+id/editBookAddress"
+            android:layout_width="249dp"
+            android:layout_height="45dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <EditText
+            android:id="@+id/editTextbookcontact"
+            android:layout_width="245dp"
+            android:layout_height="43dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="269dp" />
+
+        <EditText
+            android:id="@+id/editTextBookFees"
+            android:layout_width="245dp"
+            android:layout_height="43dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="325dp" />
+
+        <TextView
+            android:id="@+id/textSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Date"
+            android:textColor="#fff000" />
+
+        <Button
+            android:id="@+id/buttonDate"
+            style="?android:spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="12/07/2023" />
+
+        <TextView
+            android:id="@+id/textSelectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Time"
+            android:textColor="#fff000" />
+
+        <Button
+            android:id="@+id/buttonTime"
+            style="?android:spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="10:00" />
+
+        <Button
+            android:id="@+id/ButtonBookAppointment"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:text="Booking Now"
+            tools:ignore="MissingConstraints"
+            tools:layout_marginBottom="14dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
